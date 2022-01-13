@@ -1,0 +1,35 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="COMPANY">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="EMPLOYEE" maxOccurs="10" minOccurs="0">
+         <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Emp_name"/>
+				<xs:complexType>
+					<xs:attribute name="Emp_id" type="xs:string"/>
+				</xs:complexType>
+              <xs:element type="xs:int" name="Emp_age"/>
+              <xs:element type="xs:long" name="Emp_salary">
+			  <xs:simpleType>
+					<xs:restriction base="xs:integer">
+					<xs:minInclusive value="50000"/>
+					<xs:maxInclusive value="200000"/>
+					</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+              <xs:element type="xs:string" name="Emp_emailid"/>
+              <xs:element type="xs:long" name="Emp_Phonenum"/>
+              <xs:element type="xs:string" name="Emp_designation"/>
+            </xs:sequence>
+          </xs:complexType>
+		  <xs:unique name="unique-Emp_id">
+      <xs:selector xpath="Emp_name"/>
+      <xs:field xpath="@Emp_id"/>
+   </xs:unique>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+	
+  </xs:element>
+</xs:schema>
