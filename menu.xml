@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="menu.xsl" ?>
+<MENU>
+  <ITEM>
+  <item_no>001</item_no>
+  <category>HOT BEVERAGES</category>
+  <item_name>CAPPUCCINO</item_name>
+    <price>80.50</price>
+    <item_desc></item_desc>
+    <rating>4.5</rating>
+  </ITEM>
+<ITEM>
+  <item_no>002</item_no>
+  <category>COLD BEVERAGES</category>
+  <item_name>ICED TEA</item_name>
+    <price>90.00</price>
+    <item_desc></item_desc>
+    <rating>4</rating>
+  </ITEM>
+  <ITEM>
+  <item_no>003</item_no>
+  <category>HOT BEVERAGES</category>
+  <item_name>HOT CHOCOLATE</item_name>
+    <price>120.00</price>
+    <item_desc></item_desc>
+    <rating>5</rating>
+  </ITEM>
+  <ITEM>
+  <item_no>004</item_no>
+  <category>COLD BEVERAGES</category>
+  <item_name>ICED LATTE</item_name>
+    <price>110.00</price>
+    <item_desc></item_desc>
+    <rating>4.7</rating>
+  </ITEM>
+  <ITEM>
+  <item_no>005</item_no>
+  <category>BAKERY</category>
+  <item_name>CHOCOLATE MUFFINS</item_name>
+    <price>100.00</price>
+    <item_desc></item_desc>
+    <rating>5</rating>
+  </ITEM>
+  <ITEM>
+  <item_no>006</item_no>
+  <category>BAKERY</category>
+  <item_name>BLUE-BERRY MUFFINS</item_name>
+    <price>120.00</price>
+    <item_desc></item_desc>
+    <rating>3.5</rating>
+  </ITEM>
+  <ITEM>
+  <item_no>007</item_no>
+  <category>BAKERY</category>
+  <item_name>APPLE PIE</item_name>
+    <price>130.00</price>
+    <item_desc></item_desc>
+    <rating>4.6</rating>
+  </ITEM>
+  <ITEM>
+  <item_no>008</item_no>
+  <category>BAKERY</category>
+  <item_name>CHOCO-CHIP COOKIE</item_name>
+    <price>60.50</price>
+    <item_desc></item_desc>
+    <rating>4.9</rating>
+  </ITEM>
+  <ITEM>
+  <item_no>009</item_no>
+  <category>HOT BEVERAGES</category>
+  <item_name>ESPRESSO</item_name>
+    <price>95.00</price>
+    <item_desc></item_desc>
+    <rating>5</rating>
+  </ITEM>
+  <ITEM>
+  <item_no>010</item_no>
+  <category>COLD BEVERAGES</category>
+  <item_name>FRAPPE</item_name>
+    <price>80.50</price>
+    <item_desc></item_desc>
+    <rating>4.7</rating>
+  </ITEM>
+  
+</MENU>
