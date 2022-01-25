@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cart.xsl" ?>
+<CART>
+  <ITEM>
+  
+  
+  <item_name>CAPPUCCINO</item_name>
+    <price>80.50</price>
+    <quantity>3</quantity>
+<total>0</total>
+  </ITEM>
+<ITEM>
+  
+  <item_name>ICED TEA</item_name>
+    <price>90.00</price>
+    <quantity>1</quantity>
+<total>0</total>
+  </ITEM>
+  <ITEM>
+  
+  <item_name>HOT CHOCOLATE</item_name>
+    <price>120.00</price>
+	<quantity>2</quantity>
+<total>0</total>    
+  </ITEM>
+  <ITEM>
+  
+  <item_name>ICED LATTE</item_name>
+    <price>110.00</price>
+    <quantity>2</quantity>
+<total>0</total>
+  </ITEM>
+  <ITEM>
+  
+  <item_name>CHOCOLATE MUFFINS</item_name>
+    <price>100.00</price>
+    <quantity>1</quantity>
+<total>0</total>
+  </ITEM>
+  <ITEM>
+  
+  <item_name>BLUE-BERRY MUFFINS</item_name>
+    <price>120.00</price>
+    <quantity>5</quantity>
+<total>0</total>
+  </ITEM>
+  <ITEM>
+  
+  <item_name>APPLE PIE</item_name>
+    <price>130.00</price>
+    <quantity>1</quantity>
+<total>0</total>
+  </ITEM>
+  <ITEM>
+  
+  <item_name>CHOCO-CHIP COOKIE</item_name>
+    <price>60.50</price>
+      <quantity>10</quantity>
+<total>0</total>
+  </ITEM>
+  
+  
+  <ITEM>
+  <item_name>ESPRESSO</item_name>
+    <price>95.00</price>
+    <quantity>2</quantity>
+<total>0</total>
+  </ITEM>
+  <ITEM>
+  
+  <item_name>FRAPPE</item_name>
+    <price>80.50</price>
+    <quantity>1</quantity>
+<total>0</total>
+  </ITEM>
+  
+</CART>

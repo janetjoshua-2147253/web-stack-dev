@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad2fa80212.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/ad2fa80212.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+	
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>CART</title>
+	<script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<style>
+.nav-link
+{
+
+			padding:20px;
+            color:#2e0000 ;
+            outline: none;
+			
+}
+#id
+{color:white;
+}
+
+.nav-link:hover
+{
+background:##dec8ab;
+padding:20px;
+color:white;
+border-radius:25px;
+}
+li{text-align:left;
+padding-right:10px;
+}
+</style>
+	<script>
+	function selectprice(data)
+	{var item=data.value;
+	var price;
+	if (item=="CAPPUCCINO")
+	{price=80.5;
+	}
+	else if (item=="FRAPPE")
+	{
+	price=80.5;
+	}
+	else if (item=="ICED TEA")
+	{
+	price=90.0;
+	}
+	else if (item=="CHOCOLATE MUFFINS")
+	{
+	price=100.0;
+	}
+	else if (item=="ESPRESSO")
+	{
+	price=95.0;
+	}
+	else if (item=="ICED LATTE")
+	{
+	price=110.0;
+	}
+	else if (item=="HOT CHOCOLATE")
+	{
+	price=120.0;
+	}
+	else if (item=="BLUE-BERRY MUFFINS")
+	{
+	price=120.0;
+	}
+	else if (item=="APPLE PIE")
+	{
+	price=130.0;
+	}
+	document.getElementById("Name").value=price;
+	
+	}
+	
+	function calculate_total(data)
+	{
+	document.getElementById("bill").value=(document.getElementById("Name").value)*data.value;
+	}
+	function calculate_total1(data)
+	{
+	document.getElementById("bill1").value=(document.getElementById("Name1").value)*data.value;
+	}
+	</script>
+	
+	
+</head>
+<body background="https://i.pinimg.com/originals/c4/fc/d4/c4fcd4a653dd21ce774d5b75091f16d7.jpg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarNav">
+          <ul class="navbar-nav">
+		  <li><img src="https://seeklogo.com/images/C/coffee-house-creative-logo-3B1F1F60F9-seeklogo.com.png" width="80vh" height="80vh"></li>
+            <li class="nav-item">
+               <br> <a type="button" class="nav-link" 
+                    onclick="display()">
+                        CART   
+            </a>
+            </li>
+            <li class="nav-item"><br>
+              <a type="button" class="nav-link" data-toggle="modal" data-target="#new">ADD NEW ITEM</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="new" tabindex="-1" aria-labelledby="new" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="new">ENTER CART ITEM</h5>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Item Name</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to enter..." onchange="selectprice(this)">
+<datalist id="datalistOptions">
+  <option value="CAPPUCCINO">
+  <option value="ICED TEA">
+  <option value="HOT CHOCOLATE">
+  <option value="ICED LATTE">
+  <option value="CHOCOLATE MUFFINS">
+  <option value="BLUE-BERRY MUFFINS">
+  <option value="APPLE PIE">
+  <option value="CHOCO-CHIP COOKIE">
+  <option value="ESPRESSO">
+  <option value="FRAPPE">
+  
+</datalist>
+                      </div>
+                    <div class="form-group">
+                      <label for="Name">Price</label>
+                      <input type="number" class="form-control" id="Name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Quantity</label>
+                        <input type="number" min="1" max="100" class="form-control" id="type" onchange="calculate_total(this)" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="bill">Total</label>
+                        <input type="number" class="form-control" id="bill" aria-describedby="emailHelp">
+                    </div>
+               
+                    <div class="form-group">
+                      <a type="button" class="btn btn-primary" onclick="add()">Submit</a>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="new2" tabindex="-1" aria-labelledby="new2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="new">CART</h5>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Item Name</label>
+                        <input type="text" class="form-control" id="bill_id1" aria-describedby="emailHelp" readonly>
+                      </div>
+                    <div class="form-group">
+                      <label for="Name">Price</label>
+                      <input type="text" class="form-control" id="Name1" aria-describedby="emailHelp" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Quantity</label>
+                        <input type="text" class="form-control" id="type1" onchange="calculate_total1(this)" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="bill">Total</label>
+                        <input type="text" class="form-control" id="bill1" aria-describedby="emailHelp">
+                    </div>
+                 
+                    <div class="form-group">
+                      <a type="button" class="btn btn-primary" onclick="replace()">Submit</a>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+        <table id="id" class="table"></table>
+    </div>
+    </body>
+</html>
