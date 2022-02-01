@@ -106,7 +106,7 @@ opacity:0.4;}
 		getCookie();
             if(document.cookie.length!=0)
             {
-                var a=document.cookie.split("=");
+                var a=document.cookie.split("=",";");
 		    document.write(a[1]);
                 document.getElementById("bgcolor").value=a[3];
 				if(a[3]=="none")
