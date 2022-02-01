@@ -77,19 +77,42 @@ c=1;
                alert("Password is invalid....Format incorrect (reqd-atleast 1 upper, 1 lower, 1 spl. char, 1 digit and min 8 chars) ");
 }		   
        if (c==0)
-	   { 
-		   window.location.href="dom.html";
+	   {   var setcookie=confirm("Do you want to save name and email as cookies?");
+	       
+if(setcookie)
+		   {
+		   document.cookie="username="+username.value+";expires=Wed,2 Feb 2022 01:00:00 UTC; path=/;";
+ document.cookie="email="+email.value+";expires=Wed,2 Feb 2022 01:00:00 UTC; path=/;";
+ getCookie();
+		   }
+		   
+		   else
+		   {window.location.href="dom.html";
+		   }
 	   }
+	   
+	   function getCookie()
+       { 
+           if(document.cookie.length!=0)
+           {   
+		   
+		   
+		   
+               alert("Name and Email ID saved as cookies...."+document.cookie);
+			   window.location.href="dom.html";
+           }
+           else{
+               alert("No cookies");
+			   window.location.href="dom.html";
+           }
+       }
+	   
 	   
 	   
         }
 	
-    function setCookie()
-       {
-           document.cookie="username="+username.value;
- document.cookie="email="+email.value;
- 
-       }
+   
+	   
 </script>
 </head>
 <body background="https://i.pinimg.com/originals/c4/fc/d4/c4fcd4a653dd21ce774d5b75091f16d7.jpg">
@@ -127,7 +150,7 @@ c=1;
 <label class="form-label" for="pass">Password</label>
 </div>
 		    
-		    <button class="btn btn-outline-light btn-lg px-5" onclick="setCookies()">Set Cookies</button>
+		    
               
 		    <button class="btn btn-outline-light btn-lg px-5" type="submit" onclick="myfunc()">Sign-In</button>
 
