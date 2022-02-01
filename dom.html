@@ -88,7 +88,7 @@ padding-right:10px;
 	{
 	document.getElementById("bill1").value=(document.getElementById("Name1").value)*data.value;
 	}
-		function show()
+		function bgshow()
         {
             var value=document.getElementById("bgcolor").value;
             if(value!="Select Color")
@@ -130,7 +130,7 @@ padding-right:10px;
           </ul>
         </div>
       </nav>
-<select class="form-select" id="bgcolor" aria-label="Default select example">
+<select class="form-select" id="bgcolor" aria-label="Default select example" onchange="bgshow()">
   <option selected>Select one background color</option>
   <option value="dark blue">Dark Blue</option>
   <option value="grey">Grey</option>
