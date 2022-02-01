@@ -130,7 +130,13 @@ padding-right:10px;
           </ul>
         </div>
       </nav>
-
+<input class="form-control" list="datalistOptions" id="bgcolor" placeholder="Type to enter..." onchange="bgshow()">
+<datalist id="bgcolor">
+  <option value="BLACK">
+  <option value="WHITE">
+  <option value="GREY">
+  <option value="DARK BLUE">
+	</datalist>
       <div class="modal fade" id="new" tabindex="-1" aria-labelledby="new" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -215,14 +221,9 @@ padding-right:10px;
     <div class="container">
         <table id="id" class="table"></table>
     </div>
-	 <input class="form-control" list="datalistOptions" id="bgcolor" placeholder="Type to enter..." onchange="bgshow()">
-<datalist id="bgcolor">
-  <option value="BLACK">
-  <option value="WHITE">
-  <option value="GREY">
-  <option value="DARK BLUE">
+	 
   
   
-</datalist>
+
     </body>
 </html>
