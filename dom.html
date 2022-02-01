@@ -88,7 +88,7 @@ padding-right:10px;
 	{
 	document.getElementById("bill1").value=(document.getElementById("Name1").value)*data.value;
 	}
-		function bgshow()
+	function bgshow()
         {
             var value=document.getElementById("bgcolor").value;
             if(value!="Select Color")
@@ -104,6 +104,7 @@ padding-right:10px;
                 var a=document.cookie.split("=");
                 document.getElementById("bgcolor").value=a[1];
                 document.bgColor=a[1];
+		    document.write(a[1]);
             }
         }
 	</script>
