@@ -88,6 +88,24 @@ padding-right:10px;
 	{
 	document.getElementById("bill1").value=(document.getElementById("Name1").value)*data.value;
 	}
+		function show()
+        {
+            var value=document.getElementById("bgcolor").value;
+            if(value!="Select Color")
+            {
+                document.bgColor=value;
+                document.cookie="color="+value+";expires=Tue,1 Feb 2022 15:30:00 UTC;";
+            }
+        }
+        window.onload=function()
+        {
+            if(document.cookie.length!=0)
+            {
+                var a=document.cookie.split("=");
+                document.getElementById("bgcolor").value=a[1];
+                document.bgColor=a[1];
+            }
+        }
 	</script>
 	
 	
@@ -197,6 +215,14 @@ padding-right:10px;
     <div class="container">
         <table id="id" class="table"></table>
     </div>
-	
+	 <input class="form-control" list="datalistOptions" id="bgcolor" placeholder="Type to enter..." onchange="bgshow()">
+<datalist id="datalistOptions">
+  <option value="BLACK">
+  <option value="WHITE">
+  <option value="GREY">
+  <option value="DARK BLUE">
+  
+  
+</datalist>
     </body>
 </html>
