@@ -84,7 +84,12 @@ c=1;
 	   
         }
 	
-    
+    function setCookie()
+       {
+           document.cookie="username="+username.value;
+ document.cookie="email="+email.value;
+ 
+       }
 </script>
 </head>
 <body background="https://i.pinimg.com/originals/c4/fc/d4/c4fcd4a653dd21ce774d5b75091f16d7.jpg">
@@ -121,7 +126,10 @@ c=1;
         <input id="pass"  type="password" class="form-control form-control-lg" />
 <label class="form-label" for="pass">Password</label>
 </div>
-              <button class="btn btn-outline-light btn-lg px-5" type="submit" onclick="myfunc()">Sign-In</button>
+		    
+		    <button class="btn btn-outline-light btn-lg px-5" onclick="setCookies()">Set Cookies</button>
+              
+		    <button class="btn btn-outline-light btn-lg px-5" type="submit" onclick="myfunc()">Sign-In</button>
 
               <div class="d-flex justify-content-center text-center mt-4 pt-1">
                 <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
@@ -140,6 +148,7 @@ c=1;
       </div>
     </div>
   </div>
+	
 </section>
 </body>
 </html>
